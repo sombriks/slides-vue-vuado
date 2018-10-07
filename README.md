@@ -1,33 +1,12 @@
 # slides-vue-vuado
 
-presentation slides with a general technology overview and application motivations to be shown at weekomp 2018
+Presentation slides with a general technology overview and application motivations to be shown at weekomp 2018
 
-## Project setup
+## Overview
 
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Run your tests
-
-```
-npm run test
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
+- Vue Vuado (45 min)
+  - Intro Myself (3 min)
+  - Bit of History (5 min)
+  - Why Vue (10 min)
+  - Scaling Up and Down (22 min)
+  - Questions (5 min)
