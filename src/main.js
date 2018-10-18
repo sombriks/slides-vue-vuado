@@ -1,5 +1,6 @@
 import 'animate.css';
 import 'eagle.js/dist/eagle.css';
+import 'flexboxgrid/dist/flexboxgrid.css';
 
 import Vue from 'vue';
 import Eagle from "eagle.js";
