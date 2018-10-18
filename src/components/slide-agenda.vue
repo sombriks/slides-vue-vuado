@@ -1,5 +1,5 @@
 <template>
-  <div enter='fadeInRight' leave='fadeInRight'>
+  <div>
     <h2>Agenda</h2>
     <p class="s">$ whoami</p>
     <p class="s">Um pouco de história</p>

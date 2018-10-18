@@ -1,22 +1,33 @@
 <template>
-    <div id="vv">
-      <transition enter-active-class="fadeInDown"
-        leave-active-class="fadeOutLeftBig">
-        <router-view/>
-      </transition>
-    </div>
+  <div id="vv">
+    <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
+      <slide-capa/>
+    </slide>
+    <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
+      <slide-agenda/>
+    </slide>
+    <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
+      <slide-whoami/>
+    </slide>
+    <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
+      <slide-historia/>
+    </slide>
+    <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
+      <slide-whyvue/>
+    </slide>
+    <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
+      <slide-scaleupdown/>
+    </slide>
+    <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
+      <slide-questions/>
+    </slide>
+  </div>
 </template>
-
 <script>
-import VueRouter from "vue-router";
+import eagle from "eagle.js";
 export default {
   name: "app",
-  router: new VueRouter({
-    routes: [
-      {path: "/", redirect: "/capa"},
-      {path: "/capa", component: require("./components/slide-capa.vue")},
-    ],
-  }),
+  mixins: [eagle.slideshow],
 };
 </script>
 

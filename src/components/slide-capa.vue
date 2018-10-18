@@ -2,7 +2,7 @@
   <div>
     <h1>Vue Vuado</h1>
     <img src="../assets/logo.png"/>
-    <h2 v-if="step == 2">Breve história de como o moderno e eficiente também é simples</h2>
+    <h2>Breve história de como o moderno e eficiente também é simples</h2>
   </div>
 </template>
 

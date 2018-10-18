@@ -9,9 +9,8 @@
   },
   "dependencies": {
     "animate.css": "^3.7.0",
-    "vue": "^2.5.17",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "eagle.js": "^0.4.1",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.4",
