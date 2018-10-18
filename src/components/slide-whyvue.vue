@@ -5,6 +5,7 @@
 <script>
 export default {
   name: "slide-whyvue",
+  props: ["step"],
 };
 </script>
 

@@ -1,12 +1,12 @@
-import 'animate.css'
-import 'eagle.js/dist/eagle.css'
+import 'animate.css';
+import 'eagle.js/dist/eagle.css';
 
-import Vue from 'vue'
-import Eagle from "eagle.js"
+import Vue from 'vue';
+import Eagle from "eagle.js";
 
-import App from './App.vue'
+import App from './App.vue';
 
-Vue.use(Eagle)
+Vue.use(Eagle);
 
 import SlideCapa from "./components/slide-capa.vue";
 import SlideAgenda from "./components/slide-agenda.vue";
@@ -27,4 +27,4 @@ Vue.component("slide-questions", SlideQuestions);
 new Vue({
   el: "#app",
   render: h => h(App)
-})
+});

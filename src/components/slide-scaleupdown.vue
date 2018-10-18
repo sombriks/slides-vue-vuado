@@ -5,6 +5,7 @@
 <script>
 export default {
   name: "slide-scaleupdown",
+  props: ["step"],
 };
 </script>
 

@@ -1,25 +1,25 @@
 <template>
   <div id="vv">
-    <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
-      <slide-capa/>
+    <slide :steps="3" enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
+      <slide-capa :step="step"/>
     </slide>
     <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
-      <slide-agenda/>
+      <slide-agenda :step="step"/>
     </slide>
     <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
-      <slide-whoami/>
+      <slide-whoami :step="step"/>
     </slide>
     <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
-      <slide-historia/>
+      <slide-historia :step="step"/>
     </slide>
     <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
-      <slide-whyvue/>
+      <slide-whyvue :step="step"/>
     </slide>
     <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
-      <slide-scaleupdown/>
+      <slide-scaleupdown :step="step"/>
     </slide>
     <slide enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
-      <slide-questions/>
+      <slide-questions :step="step"/>
     </slide>
   </div>
 </template>

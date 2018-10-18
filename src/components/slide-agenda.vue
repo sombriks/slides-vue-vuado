@@ -12,6 +12,7 @@
 <script>
 export default {
   name: "slide-agenda",
+  props: ["step"],
 };
 </script>
 

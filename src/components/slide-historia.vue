@@ -5,6 +5,7 @@
 <script>
 export default {
   name: "slide-historia",
+  props: ["step"],
 };
 </script>
 

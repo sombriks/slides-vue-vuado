@@ -5,6 +5,7 @@
 <script>
 export default {
   name: "slide-whoami",
+  props: ["step"],
 };
 </script>
 

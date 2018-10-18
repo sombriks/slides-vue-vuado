@@ -5,6 +5,7 @@
 <script>
 export default {
   name: "slide-questions",
+  props: ["step"],
 };
 </script>
 
