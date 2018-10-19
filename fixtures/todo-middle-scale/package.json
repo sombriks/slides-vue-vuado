@@ -1,0 +1,26 @@
+{
+  "name": "todo-middle-scale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "budo src/main.js:build.js -o -l -H 127.0.0.1",
+    "build": "browserify src/main.js -o build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "budo": "^11.5.0",
+    "vueify": "^9.4.1"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "browserify": {
+    "transform": [
+      "vueify"
+    ]
+  }
+}

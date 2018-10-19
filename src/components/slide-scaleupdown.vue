@@ -48,7 +48,15 @@
     </div>
     <div v-if="step > 8">
       <h3>Para baixo</h3>
-      <h4><a href="#" target="demo1">Demo 1</a></h4>
+      <h4>fixtures/todo-sacale-down</h4>
+    </div>
+    <div v-if="step > 9">
+      <h3>Intermediário</h3>
+      <h4>fixtures/todo-middle-scale</h4>
+    </div>
+    <div v-if="step > 10">
+      <h3>'E esta nem é a minha forma final'</h3>
+      <h4>fixtures/todo-scale-up</h4>
     </div>
   </div>
 </template>
@@ -58,7 +66,7 @@ export default {
   name: "slide-scaleupdown",
   props: ["step"],
   created() {
-    this.$emit("upsteps", 20);
+    this.$emit("upsteps", 11);
   },
 };
 </script>
