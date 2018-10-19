@@ -20,6 +20,7 @@
           <li>16+ yrs tech enthusiast (i.e. rpg maker 95/2003 pre-ruby)</li>
           <li>20+ yrs super nintendo player</li>
           <li>~5 min vue evangelist</li>
+          <li v-if="step==5"><a href="https://sombriks.com.br/#/" target="me">https://sombriks.com.br</a></li>
         </ul>
       </div>    
       <div class="col-xs-6 col-sm-4">
