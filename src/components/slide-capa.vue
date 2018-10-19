@@ -20,9 +20,10 @@
       e assim fazer o palestrante 
       seguir o baile.
     </pre>
-    <h1 v-if="step >=2">Vue Vuado</h1>
-    <img v-if="step >=3" src="../assets/logo.png"/>
-    <h2  v-if="step ==4">O moderno e eficiente também é simples e prático</h2>
+    <img v-if="step ==2" src="../assets/weekomp.png"/>
+    <h1 v-if="step >=3">Vue Vuado</h1>
+    <img v-if="step >=4" src="../assets/logo.png"/>
+    <h2  v-if="step ==5">O moderno e eficiente também é simples e prático</h2>
   </div>
 </template>
 
@@ -31,12 +32,9 @@ export default {
   name: "slide-capa",
   props: ["step"],
   created() {
-    this.$emit("upsteps", 4);
+    this.$emit("upsteps", 5);
   },
 };
 </script>
 <style>
-.s {
-  text-align: start;
-}
 </style>

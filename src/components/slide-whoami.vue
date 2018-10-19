@@ -46,6 +46,9 @@ export default {
 </script>
 
 <style scoped>
+li {
+  text-align: start;
+}
 .w {
   width: 50%;
 }

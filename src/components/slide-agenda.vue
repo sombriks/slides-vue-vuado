@@ -1,15 +1,19 @@
 <template>
   <div>
     <h1>Agenda</h1>
-    <ul>
-      <li v-if="step >= 2" class="s">$ whoami</li>
-      <li v-if="step >= 2" class="s">Um pouco de história</li>
-      <li v-if="step >= 2" class="s">Por que adotar Vue</li>
-      <li v-if="step >= 2" class="s">Escalando para cima e para baixo</li>
-      <li v-if="step == 2" class="s">Perguntas?</li>
-      <li v-if="step == 3" class="s" style="color:red">&#10085;&#10085;&#10085; Estamos contratando!!! &#10085;&#10085;&#10085;</li>
-      <li v-if="step == 4" class="s">Perguntas?</li>
-    </ul>
+    <div class="row">
+      <div class="col-xs-11 col-xs-offset-1">
+        <ul>
+          <li v-if="step >= 2">$ whoami</li>
+          <li v-if="step >= 2">Um pouco de história</li>
+          <li v-if="step >= 2">Por que adotar Vue</li>
+          <li v-if="step >= 2">Escalando para cima e para baixo</li>
+          <li v-if="step == 2">Perguntas?</li>
+          <li v-if="step == 3" style="color:red">&#10085;&#10085;&#10085; Estamos contratando!!! &#10085;&#10085;&#10085;</li>
+          <li v-if="step == 4">Perguntas?</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -24,6 +28,9 @@ export default {
 </script>
 
 <style scoped>
+li {
+  text-align: start;
+}
 /* https://br.vuejs.org/v2/guide/transitions.html */
 /* Animações de entrada e saída podem utilizar diferentes  */
 /* funções de duração e de tempo.                          */

@@ -1,5 +1,6 @@
 <template>
   <div id="vv">
+    <input class="slideindex" v-model="currentSlideIndex" type="number" min="1" max="7"/>
     <slide :steps="s1" enter="fadeInDown" leave="fadeOutDown" enterPrev="fadeInDown" leavePrev="fadeInDown" enterNext="fadeInDown" leaveNext="fadeOutDown">
       <slide-capa :step="step" @upsteps="s => s1 = s"/>
     </slide>
@@ -51,8 +52,12 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-body {
-  background-image: url(./assets/weekomp.png);
-  background-repeat: no-repeat;
+.slideindex {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border: black 1px solid;
+  width: 3em;
+  height: 2em;
 }
 </style>
