@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dodo List</title>
+  <script src="vue-2.5.17.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <fieldset>
+      <legend>TODO APP</legend>
+      <form @submit.prevent="add">
+        <input v-model="newtodo.name" required />
+        <input type="submit" />
+      </form>
+      <ul>
+        <li v-if="todolist.length==0">
+          Agenda livre yaaay
+        </li>
+        <li v-for="item in todolist" :key="item.id">
+          #{{item.id}} - {{item.name}} <button @click="rm(item)">X</button>
+        </li>
+      </ul>
+    </fieldset>
+  </div>
+  <script>
+    new Vue({
+      el: "#app",
+      data: {
+        newtodo: {
+          name: ""
+        },
+        todolist: []
+      },
+      methods: {
+        add() {
+          this.newtodo.id = new Date().getTime()
+          this.todolist.unshift(this.newtodo)
+          this.newtodo = {
+            name: ""
+          }
+        },
+        rm(item) {
+          this.todolist = this.todolist.filter(e => e != item)
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

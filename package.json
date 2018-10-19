@@ -11,6 +11,7 @@
     "animate.css": "^3.7.0",
     "eagle.js": "^0.4.1",
     "flexboxgrid": "^6.3.1",
+    "marked": "^0.5.1",
     "vue": "^2.5.17"
   },
   "devDependencies": {

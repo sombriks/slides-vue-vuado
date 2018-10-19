@@ -3,11 +3,11 @@ import 'eagle.js/dist/eagle.css';
 import 'flexboxgrid/dist/flexboxgrid.css';
 
 import Vue from 'vue';
+
 import Eagle from "eagle.js";
+Vue.use(Eagle);
 
 import App from './App.vue';
-
-Vue.use(Eagle);
 
 import SlideCapa from "./components/slide-capa.vue";
 import SlideAgenda from "./components/slide-agenda.vue";
