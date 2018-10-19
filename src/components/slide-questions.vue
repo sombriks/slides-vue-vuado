@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Perguntas?</h1>
+    <h1 v-if="step==1">Perguntas?</h1>
+    <h1 v-if="step==2">Obrigado!</h1>
   </div>
 </template>
 
@@ -9,7 +10,7 @@ export default {
   name: "slide-questions",
   props: ["step"],
   created() {
-    this.$emit("upsteps", 1);
+    this.$emit("upsteps", 2);
   },
 };
 </script>

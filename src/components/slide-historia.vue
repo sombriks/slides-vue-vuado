@@ -44,7 +44,7 @@
     <h2 v-if="step >= 24 && step < 27">20 de outubro de 2010</h2>
     <img v-if="step == 25" class="ws" src="../assets/angular-js.png"/>
     <p v-if="step == 26">O <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel" target="mvvw">MVVW</a> chega pra todo mundo</p>
-    <h2 v-if="step >= 27">Fevereiro de 2014</h2>
+    <h2 v-if="step >= 27 && step < 29">Fevereiro de 2014</h2>
     <img class="ws" v-if="step >= 28" src="../assets/logo.png"/>
     <p v-if="step >= 29" style="color:gold;">Reatividade pra todo mundo</p>
   </div>
