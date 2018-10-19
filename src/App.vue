@@ -51,4 +51,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+body {
+  background-image: url(./assets/weekomp.png);
+  background-repeat: no-repeat;
+}
 </style>

@@ -1,12 +1,15 @@
 <template>
   <div>
     <h1>Agenda</h1>
-    <p v-if="step >= 2" class="s">$ whoami</p>
-    <p v-if="step >= 2" class="s">Um pouco de história</p>
-    <p v-if="step >= 2" class="s">Por que adotar Vue</p>
-    <p v-if="step >= 2" class="s">Escalando para cima e para baixo</p>
-    <p v-if="step == 3" class="s" style="color:red">&#10085;&#10085;&#10085; Estamos contratando!!! &#10085;&#10085;&#10085;</p>
-    <p v-if="step == 4" class="s">Perguntas</p>
+    <ul>
+      <li v-if="step >= 2" class="s">$ whoami</li>
+      <li v-if="step >= 2" class="s">Um pouco de história</li>
+      <li v-if="step >= 2" class="s">Por que adotar Vue</li>
+      <li v-if="step >= 2" class="s">Escalando para cima e para baixo</li>
+      <li v-if="step == 2" class="s">Perguntas?</li>
+      <li v-if="step == 3" class="s" style="color:red">&#10085;&#10085;&#10085; Estamos contratando!!! &#10085;&#10085;&#10085;</li>
+      <li v-if="step == 4" class="s">Perguntas?</li>
+    </ul>
   </div>
 </template>
 
