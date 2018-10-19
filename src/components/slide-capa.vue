@@ -1,6 +1,7 @@
 <template>
   <div>
-    <pre v-if="step ==1" style="color:darkred;">
+    <img v-if="step ==1" src="../assets/weekomp.png"/>
+    <pre v-if="step ==2" style="color:darkred;">
       O presente material expressa 
       as visões de seu autor e unicamente 
       isto. Não representa verdades 
@@ -20,7 +21,6 @@
       e assim fazer o palestrante 
       seguir o baile.
     </pre>
-    <img v-if="step ==2" src="../assets/weekomp.png"/>
     <h1 v-if="step >=3">Vue Vuado</h1>
     <img v-if="step >=4" src="../assets/logo.png"/>
     <h2  v-if="step ==5">O moderno e eficiente também é simples e prático</h2>
