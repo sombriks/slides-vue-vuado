@@ -10,3 +10,5 @@ Presentation slides with a general technology overview and application motivatio
   - Why Vue (10 min)
   - Scaling Up and Down (22 min)
   - Questions (5 min)
+
+[Link dos slides](https://slides-vue-vuado.firebaseapp.com/)
