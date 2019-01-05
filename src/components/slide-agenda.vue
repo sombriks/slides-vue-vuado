@@ -9,8 +9,6 @@
           <li v-if="step >= 2">Por que adotar Vue</li>
           <li v-if="step >= 2">Escalando para cima e para baixo</li>
           <li v-if="step == 2">Perguntas?</li>
-          <li v-if="step == 3" style="color:red">&#10085;&#10085;&#10085; Estamos contratando!!! &#10085;&#10085;&#10085;</li>
-          <li v-if="step == 4">Perguntas?</li>
         </ul>
       </div>
     </div>
@@ -22,7 +20,7 @@ export default {
   name: "slide-agenda",
   props: ["step"],
   created() {
-    this.$emit("upsteps", 4);
+    this.$emit("upsteps", 2);
   },
 };
 </script>
